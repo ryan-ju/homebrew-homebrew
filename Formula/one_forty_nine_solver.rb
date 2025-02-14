@@ -5,21 +5,21 @@
 class OneFortyNineSolver < Formula
   desc "Example rust release"
   homepage ""
-  version "0.0.2"
+  version "0.0.5"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/ryan-ju/1-49-puzzle-solver/releases/download/v0.0.2/one_forty_nine_solver_Darwin_x86_64.tar.gz"
-    sha256 "5d8f3d552f4170fab703fd8d037f1d64f89fc0d0e5cc0239abae41f72f395b74"
+    url "https://github.com/ryan-ju/1-49-puzzle-solver/releases/download/v0.0.5/one_forty_nine_solver_Darwin_x86_64.tar.gz"
+    sha256 "a61220f8428fca981620f1831400dc187cde3816e32650b662c0308a945d4be3"
 
     def install
       bin.install "one_forty_nine_solver"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/ryan-ju/1-49-puzzle-solver/releases/download/v0.0.2/one_forty_nine_solver_Darwin_arm64.tar.gz"
-    sha256 "ad61a0ef51ced262d131e527b9dd3c3216b5558ef034d8431de2443fdb4a3533"
+    url "https://github.com/ryan-ju/1-49-puzzle-solver/releases/download/v0.0.5/one_forty_nine_solver_Darwin_arm64.tar.gz"
+    sha256 "3403348a1bdc523b29e302fb624ed3afd67f617219724c663fb8a3b17e37f19e"
 
     def install
       bin.install "one_forty_nine_solver"
